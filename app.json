@@ -1,0 +1,42 @@
+{
+  "expo": {
+    "name": "Keeeeep",
+    "slug": "keeeeep",
+    "scheme": "keeeeep",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#3B82F6"
+    },
+    "description": "แอปจัดเก็บและจัดระเบียบเว็บไซต์ที่คุณชื่นชอบ พร้อม AI สรุปเนื้อหาอัตโนมัติ",
+    "newArchEnabled": true,
+    "web": {
+      "favicon": "./assets/logo.png"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.endlessedwork.keeeeep"
+    },
+    "android": {
+      "edgeToEdgeEnabled": true,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#3B82F6"
+      },
+      "package": "com.endlessedwork.keeeeep",
+      "versionCode": 1,
+      "permissions": [
+        "INTERNET"
+      ]
+    },
+    "extra": {
+      "eas": {
+        "projectId": "your-project-id-here"
+      }
+    }
+  }
+}
