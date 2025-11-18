@@ -4,13 +4,17 @@
 FROM node:20-bookworm-slim AS builder
 WORKDIR /app
 
-# Install system deps sometimes needed by Expo/Sharp
+# Install system deps
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    python3 make g++ git ca-certificates && \
+    python3 make g++ git ca-certificates curl unzip && \
     rm -rf /var/lib/apt/lists/*
 
-COPY package*.json ./
-RUN npm ci
+# Install bun
+RUN curl -fsSL https://bun.sh/install | bash
+ENV PATH="/root/.bun/bin:$PATH"
+
+COPY package.json bun.lockb ./
+RUN bun install --frozen-lockfile
 
 COPY . .
 
