@@ -12,8 +12,9 @@ logs
 .DS_Store
 *.pem
 expo-env.d.ts
-**/*.js
-**/*.js.map
+# Do NOT ignore project JS files; Expo needs babel/metro configs
+# **/*.js
+# **/*.js.map
 ios
 android
 .env
