@@ -8,3 +8,6 @@
 
 # Node.js dependency directory
 node_modules/
+
+# Local environment (do not commit secrets)
+.env
