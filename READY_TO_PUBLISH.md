@@ -26,7 +26,7 @@
 - ✅ แก้ไข `src/api/openai.ts` ให้ใช้ key ของคุณ
 
 ### 6. **Privacy Policy** ✅
-- ✅ URL: https://endlessedwork.github.io/keeeeep/
+- ✅ URL: https://keeeeep.sky168.info/privacy-policy.html
 - ✅ เปิดได้แล้วและมีเนื้อหาครบถ้วน
 
 ---
@@ -35,7 +35,7 @@
 
 ### **คู่มือต่างๆ:**
 1. `SETUP_API_KEY.md` - วิธีตั้งค่า OpenAI API
-2. `GITHUB_PAGES_SETUP.md` - วิธีอัพ Privacy Policy ขึ้นเว็บ
+2. `PRIVACY_POLICY_URL.md` - URL ของ Privacy Policy สำหรับ Play Store
 3. `SCREENSHOT_GUIDE.md` - วิธีถ่ายภาพหน้าจอสำหรับ Play Store
 4. `BUILD_AND_PUBLISH_GUIDE.md` - วิธี build และอัพแอปขึ้น Play Store
 5. `PLAY_STORE_DESCRIPTION.txt` - คำอธิบายแอปภาษาไทย (short + full)
@@ -109,7 +109,7 @@ eas build --platform android --profile production
 1. สร้างแอปใน Play Console
 2. อัปโหลด screenshots + feature graphic
 3. กรอก description (copy จาก `PLAY_STORE_DESCRIPTION.txt`)
-4. ใส่ Privacy Policy URL: `https://endlessedwork.github.io/keeeeep/`
+4. ใส่ Privacy Policy URL: `https://keeeeep.sky168.info/privacy-policy.html`
 5. ทำ Content rating questionnaire
 6. อัปโหลดไฟล์ `.aab`
 7. Submit for review

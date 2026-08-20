@@ -3,7 +3,7 @@
 ## 📋 สิ่งที่ต้องเตรียม
 
 ### ✅ เอกสารที่พร้อมแล้ว:
-- [x] Privacy Policy URL: `https://endlessedwork.github.io/keeeeep/`
+- [x] Privacy Policy URL: `https://keeeeep.sky168.info/privacy-policy.html`
 - [x] OpenAI API Key: ใส่ใน `.env` แล้ว
 - [x] App icon (PNG): สร้างแล้ว
 - [x] Feature Graphic: `assets/feature-graphic.png`
@@ -135,8 +135,8 @@ eas build --platform android --profile production
 
 #### 📧 **Contact details:**
 - **Email**: endlessedwork@gmail.com
-- **Website**: https://endlessedwork.github.io/keeeeep/ (optional)
-- **Privacy Policy URL**: https://endlessedwork.github.io/keeeeep/
+- **Website**: https://keeeeep.sky168.info/ (optional)
+- **Privacy Policy URL**: https://keeeeep.sky168.info/privacy-policy.html
 
 ### ขั้นตอนที่ 3: Store settings
 

@@ -48,5 +48,9 @@ FROM nginx:alpine AS runner
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 COPY --from=builder /app/web-dist/ /usr/share/nginx/html/
 
+# Privacy policy page (also copied by `expo export` from public/, kept here
+# explicitly so the Play Store URL never depends on the export step)
+COPY public/privacy-policy.html /usr/share/nginx/html/privacy-policy.html
+
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
