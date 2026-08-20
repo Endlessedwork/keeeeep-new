@@ -66,14 +66,14 @@ We may update this Privacy Policy from time to time. We will notify you of any c
 ## Contact Us
 
 If you have questions about this Privacy Policy, please contact us at:
-- Email: endlessedwork@gmail.com
+- Email: zioniun2023@gmail.com
 - Developer: Endlessedwork
 
 ## Data Deletion
 
 To delete your data:
 1. Delete individual bookmarks or categories from within the app, or
-2. Email endlessedwork@gmail.com from (or referencing) the address you signed up with to request full account deletion. We will process the request within 30 days.
+2. Email zioniun2023@gmail.com from (or referencing) the address you signed up with to request full account deletion. We will process the request within 30 days.
 
 The full policy is also available inside the app under Settings → นโยบายความเป็นส่วนตัว.
 

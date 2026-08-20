@@ -1,96 +1,50 @@
-# 🚀 วิธีอัพโหลด Privacy Policy ขึ้น GitHub Pages
+# 🚀 เผยแพร่ Privacy Policy เป็น URL สำหรับ Play Store
 
-## ขั้นตอนที่ 1: สร้าง Repository
+Play Store ต้องการ **URL สาธารณะ** ของนโยบายความเป็นส่วนตัว (หน้าในแอปใช้แทนไม่ได้)
+ไฟล์หน้าเว็บถูกเตรียมไว้ในโฟลเดอร์ `docs/` ของ repo นี้แล้ว เหลือแค่เปิด GitHub Pages
 
-1. ไปที่ https://github.com/Endlessedwork
-2. คลิก **"New"** (ปุ่มสีเขียว) เพื่อสร้าง repository ใหม่
-3. ตั้งชื่อ repository: `keeeeep-privacy-policy`
-4. เลือก **Public** (ต้องเป็น Public ถึงจะใช้ GitHub Pages ฟรีได้)
-5. ✅ เลือก **"Add a README file"**
-6. คลิก **"Create repository"**
+## ไฟล์ที่เกี่ยวข้อง
 
-## ขั้นตอนที่ 2: อัพโหลดไฟล์
+| ไฟล์ | หน้าที่ |
+|------|---------|
+| `docs/index.html` | หน้านโยบายความเป็นส่วนตัว (ภาษาไทย) — หน้าหลักที่จะถูกเสิร์ฟ |
+| `docs/privacy-policy.html` | redirect ไปที่ `index.html` เผื่อมีคนใช้ลิงก์เดิม |
+| `docs/.nojekyll` | บอก GitHub Pages ให้เสิร์ฟไฟล์ตรงๆ ไม่ต้องผ่าน Jekyll |
 
-### วิธีที่ 1: อัพโหลดผ่านเว็บ (ง่ายสุด)
+## ขั้นตอนเปิด GitHub Pages (ทำครั้งเดียว)
 
-1. ในหน้า repository ที่สร้างใหม่ คลิก **"Add file"** → **"Create new file"**
+1. merge branch นี้เข้า `main` ก่อน (Pages จะอ่านจาก branch `main`)
+2. ไปที่ https://github.com/Endlessedwork/keeeeep-new/settings/pages
+3. ที่หัวข้อ **Build and deployment → Source** เลือก **Deploy from a branch**
+4. **Branch**: เลือก `main` และโฟลเดอร์ **`/docs`**
+5. กด **Save** แล้วรอประมาณ 1-3 นาที
 
-2. **สร้างไฟล์ที่ 1:**
-   - ตั้งชื่อไฟล์: `index.html`
-   - Copy เนื้อหาจากไฟล์ `docs/privacy-policy.html` ที่ผมสร้างให้
-   - Paste ลงในช่อง
-   - กด **"Commit new file"**
-
-3. **สร้างโฟลเดอร์ docs (ถ้ายังไม่มี):**
-   - คลิก **"Add file"** → **"Create new file"**
-   - ตั้งชื่อ: `docs/index.md`
-   - Copy เนื้อหาจากไฟล์ `docs/index.md` ที่ผมสร้างให้
-   - Paste ลงในช่อง
-   - กด **"Commit new file"**
-
-### วิธีที่ 2: อัพโหลดไฟล์โดยตรง
-
-1. ในหน้า repository คลิก **"Add file"** → **"Upload files"**
-2. ลากไฟล์ `privacy-policy.html` ลงในกรอบ
-3. เปลี่ยนชื่อเป็น `index.html`
-4. กด **"Commit changes"**
-
-## ขั้นตอนที่ 3: เปิดใช้งาน GitHub Pages
-
-1. ในหน้า repository คลิกแท็บ **"Settings"**
-2. ในเมนูด้านซ้าย คลิก **"Pages"**
-3. ที่ส่วน **"Source"**:
-   - Branch: เลือก **`main`**
-   - Folder: เลือก **`/ (root)`** หรือ **`/docs`** (ขึ้นกับว่าใส่ไฟล์ไว้ที่ไหน)
-4. กด **"Save"**
-5. รอ 2-3 นาที
-
-## ขั้นตอนที่ 4: รับ URL
-
-หลังจาก 2-3 นาที กลับมาที่หน้า **Settings → Pages** จะเห็น:
+## URL ที่จะได้
 
 ```
-✅ Your site is live at https://endlessedwork.github.io/keeeeep-privacy-policy/
+https://endlessedwork.github.io/keeeeep-new/
 ```
 
-**นี่คือ URL ที่คุณจะใส่ใน Play Store!** 🎉
+นำ URL นี้ไปใส่ใน Play Console → **Policy → App content → Privacy policy**
 
----
+> repo นี้เป็น Public อยู่แล้ว จึงใช้ GitHub Pages ได้ฟรี
 
-## 📋 สรุปไฟล์ที่ต้องอัพโหลด
+## ตรวจสอบ
 
-ผมสร้างไว้ให้แล้วใน `/home/user/workspace/docs/`:
+เปิด URL ในเบราว์เซอร์ ต้องเห็นหน้านโยบายภาษาไทย มีหัวข้อครบตั้งแต่ "บทนำ" ถึง "ติดต่อเรา"
 
-1. **`privacy-policy.html`** - ไฟล์ HTML สวยงาม พร้อม styling
-2. **`index.md`** - ไฟล์ Markdown (ถ้าอยากใช้แบบเรียบๆ)
+## เวลาแก้เนื้อหานโยบาย
 
-**แนะนำใช้ `privacy-policy.html`** แล้วเปลี่ยนชื่อเป็น `index.html` เวลาอัพโหลด
+แก้ให้ตรงกันทั้ง 3 ที่ เพื่อไม่ให้ข้อมูลขัดกัน:
 
----
+1. `docs/index.html` — หน้าเว็บ (URL ที่ Play Store ใช้)
+2. `src/screens/PrivacyPolicyScreen.tsx` — หน้าในแอป
+3. `PRIVACY_POLICY.md` — เอกสารในโปรเจกต์
 
-## ✅ เมื่ออัพโหลดเสร็จ
-
-URL ที่ได้: `https://endlessedwork.github.io/keeeeep-privacy-policy/`
-
-**นำ URL นี้ไปใส่ตอนอัพแอปขึ้น Play Store** ในช่อง "Privacy Policy URL"
-
----
-
-## 💡 ทดสอบ
-
-เปิด URL ในเบราว์เซอร์ ต้องเห็นหน้า Privacy Policy สวยงามแบบนี้:
-- มี header สีน้ำเงิน
-- มี icon emoji
-- อ่านง่าย มีสีสัน
-
----
+commit และ push ขึ้น `main` แล้ว GitHub Pages จะอัปเดตให้อัตโนมัติภายในไม่กี่นาที
 
 ## ❓ ถ้ามีปัญหา
 
-1. **ไม่เห็น URL** → รอ 5-10 นาที แล้วรีเฟรชหน้า
-2. **404 Error** → เช็คว่าไฟล์ชื่อ `index.html` หรือ `index.md` (ต้องเป็น index)
-3. **ไม่มีปุ่ม Pages** → เช็คว่า repository เป็น **Public** หรือยัง
-
----
-
-พร้อมแล้วครับ! ถ้ามีอะไรติดขัด บอกผมได้เลยนะครับ 😊
+- **404** → เช็คว่าเลือกโฟลเดอร์ `/docs` (ไม่ใช่ `/ (root)`) และไฟล์ชื่อ `index.html`
+- **ยังไม่ขึ้น** → รอ 5-10 นาที แล้ว hard refresh (Ctrl/Cmd + Shift + R)
+- **หน้าเก่าค้าง** → เป็น cache ของเบราว์เซอร์ ลองเปิดโหมดไม่ระบุตัวตน
