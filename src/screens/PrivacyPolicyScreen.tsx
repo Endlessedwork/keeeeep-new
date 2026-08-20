@@ -7,7 +7,7 @@ import ThemedCard from "../components/ThemedCard";
 import { theme } from "../theme/colors";
 
 const LAST_UPDATED = "20 สิงหาคม 2025";
-const CONTACT_EMAIL = "endlessedwork@gmail.com";
+const CONTACT_EMAIL = "zioniun2023@gmail.com";
 
 interface SectionProps {
   icon: keyof typeof Ionicons.glyphMap;
