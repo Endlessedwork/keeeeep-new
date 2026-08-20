@@ -238,6 +238,19 @@ export default function RegisterScreen({ navigation }: any) {
                   disabled={googleLoading}
                 />
 
+                {/* Privacy Policy Link */}
+                <Pressable
+                  className="mt-4"
+                  onPress={() => navigation.navigate("PrivacyPolicy")}
+                >
+                  <Text className="text-center text-gray-500 text-xs">
+                    การสมัครสมาชิกถือว่าคุณยอมรับ{" "}
+                    <Text className="text-brand-primary font-semibold">
+                      นโยบายความเป็นส่วนตัว
+                    </Text>
+                  </Text>
+                </Pressable>
+
                 {/* Login Link */}
                 <View className="flex-row justify-center mt-6">
                   <Text className="text-gray-600 text-base">

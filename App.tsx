@@ -21,6 +21,7 @@ import ManageCategoriesScreen from "./src/screens/ManageCategoriesScreen";
 import SettingsScreen from "./src/screens/SettingsScreen";
 import StatisticsScreen from "./src/screens/StatisticsScreen";
 import AboutScreen from "./src/screens/AboutScreen";
+import PrivacyPolicyScreen from "./src/screens/PrivacyPolicyScreen";
 
 /*
 IMPORTANT NOTICE: DO NOT REMOVE
@@ -94,6 +95,7 @@ export default function App() {
                 <Stack.Screen name="Login" component={LoginScreen} />
                 <Stack.Screen name="Register" component={RegisterScreen} />
                 <Stack.Screen name="ForgotPassword" component={ForgotPasswordScreen} />
+                <Stack.Screen name="PrivacyPolicy" component={PrivacyPolicyScreen} />
               </>
             ) : (
               <>
@@ -123,6 +125,10 @@ export default function App() {
                 <Stack.Screen 
                   name="About" 
                   component={AboutScreen}
+                />
+                <Stack.Screen 
+                  name="PrivacyPolicy" 
+                  component={PrivacyPolicyScreen}
                 />
                 <Stack.Screen 
                   name="BookmarkDetail" 

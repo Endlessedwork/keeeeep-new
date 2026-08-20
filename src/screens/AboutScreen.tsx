@@ -133,6 +133,16 @@ export default function AboutScreen({ navigation }: any) {
           <Text className="text-sm text-gray-600 leading-5 mt-2">
             แอปนี้พัฒนาโดยใช้ React Native และ Expo
           </Text>
+          <Pressable
+            className="flex-row items-center mt-3"
+            onPress={() => navigation.navigate("PrivacyPolicy")}
+          >
+            <Ionicons name="shield-checkmark-outline" size={18} color="#4B5563" />
+            <Text className="text-sm font-semibold text-gray-700 ml-2">
+              นโยบายความเป็นส่วนตัว
+            </Text>
+            <Ionicons name="chevron-forward" size={16} color="#9CA3AF" />
+          </Pressable>
         </View>
 
         {/* Powered by */}
