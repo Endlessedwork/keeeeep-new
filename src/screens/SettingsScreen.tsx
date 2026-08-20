@@ -194,6 +194,19 @@ export default function SettingsScreen({ navigation }: any) {
           </Pressable>
 
           <Pressable
+            className="flex-row items-center justify-between py-3 border-b border-gray-100"
+            onPress={() => navigation.navigate("PrivacyPolicy")}
+          >
+            <View className="flex-row items-center">
+              <Ionicons name="shield-checkmark" size={24} color="#34D399" />
+              <Text style={{ color: theme.textPrimary, fontSize: 16, fontWeight: "600", marginLeft: 12 }}>
+                นโยบายความเป็นส่วนตัว
+              </Text>
+            </View>
+            <Ionicons name="chevron-forward" size={20} color="#9CA3AF" />
+          </Pressable>
+
+          <Pressable
             className="flex-row items-center justify-between py-3"
             onPress={() => navigation.navigate("About")}
           >
